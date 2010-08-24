@@ -26,6 +26,7 @@ class RecordsController < ApplicationController
 
     respond_to do |wants|
       wants.js
+      wants.xml { head :ok }
     end
   end
 
@@ -74,6 +75,7 @@ class RecordsController < ApplicationController
 
     respond_to do |wants|
       wants.js
+      wants.xml { head :ok }
     end
   end
 
